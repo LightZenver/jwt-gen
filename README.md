@@ -8,7 +8,7 @@
 ## 🇺🇸 English
 
 ### 🚀 Overview
-**JWT Key Generator v2.0** - Advanced Python tool for secure JWT key generation with interactive control panel and extensive configuration options. Perfect for development, testing, and educational purposes.
+**JWT Key Generator** - Advanced Python tool for secure JWT key generation with interactive control panel and extensive configuration options. Perfect for development, testing, and educational purposes.
 
 ### ✨ Features
 - 🎛️ **Interactive Control Panel** - User-friendly terminal interface
@@ -65,7 +65,7 @@ generated_keys/
 ## 🇷🇺 Русский
 
 ### 🚀 Обзор
-**JWT Key Generator v2.0** - Продвинутый Python инструмент для безопасной генерации JWT ключей с интерактивной панелью управления и расширенными настройками. Идеален для разработки, тестирования и обучения.
+**JWT Key Generator** - Продвинутый Python инструмент для безопасной генерации JWT ключей с интерактивной панелью управления и расширенными настройками. Идеален для разработки, тестирования и обучения.
 
 ### ✨ Возможности
 - 🎛️ **Интерактивная панель управления** - Удобный терминальный интерфейс
