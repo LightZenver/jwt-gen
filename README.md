@@ -113,5 +113,3 @@ If you find any issues, please create an issue in the GitHub repository.
 ---
 
 ⭐ If this project helped you, please give it a star! / Если проект помог вам, поставьте звезду! ⭐
-
-```
