@@ -1,21 +1,23 @@
 # JWT Key Generator / Генератор JWT Ключей
 
-![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+![Version](https://img.shields.io/badge/Version-2.0.0-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Security](https://img.shields.io/badge/Security-Testing_Only-red.svg)
 
 ## 🇺🇸 English
 
-### 🔐 Overview
-A secure Python tool for generating JWT keys for development and testing purposes. Supports HMAC secrets and RSA key pairs with token generation and verification examples.
+### 🚀 Overview
+**JWT Key Generator v2.0** - Advanced Python tool for secure JWT key generation with interactive control panel and extensive configuration options. Perfect for development, testing, and educational purposes.
 
 ### ✨ Features
-- 🔑 Generate HMAC secrets (HS256, HS384, HS512)
-- 🔐 Create RSA key pairs (RS256, RS384, RS512) 
-- 🎫 JWT token generation with custom payloads
-- ✅ Token verification and validation
-- 💾 Save keys to files with timestamps
-- 🛡️ Secure random generation
+- 🎛️ **Interactive Control Panel** - User-friendly terminal interface
+- ⚙️ **Configurable Settings** - Customizable key generation parameters
+- 🔑 **Multiple Algorithms** - HMAC, RSA, and ECDSA support
+- 📁 **Smart File Management** - Organized output with timestamps
+- 🎫 **Token Testing** - Generate and verify JWT tokens
+- 💾 **Configuration Profiles** - Save and load settings
+- 🔒 **Security Focused** - Secure random generation
 
 ### 🚀 Quick Start
 
@@ -23,93 +25,123 @@ A secure Python tool for generating JWT keys for development and testing purpose
 # Install dependencies
 pip install -r requirements.txt
 
-# Generate all keys
-python jwt_generator.py
+# Launch Control Panel (RECOMMENDED)
+python control_panel.py
 
-# HMAC keys only
+# Or use generator directly
+python jwt_generator.py --help
+
+# Generate specific key types
 python jwt_generator.py --hmac-only
-
-# RSA keys only  
 python jwt_generator.py --rsa-only
-
-# Custom output prefix
-python jwt_generator.py --output my_project_keys
+python jwt_generator.py --ec-only
 ```
 
-📁 Generated Files
+### 🎛️ Control Panel Usage
+1. **Launch**: `python control_panel.py`
+2. **Configure**: Set algorithms, key sizes, output directory
+3. **Generate**: Start key generation with one click
+4. **Results**: Keys saved in organized folder structure
 
-· *_hmac_*.json - HMAC secret keys
-· *_rsa_private_*.pem - RSA private keys
-· *_rsa_public_*.pem - RSA public keys
-· *_example_*.json - JWT token examples
+### 📁 Generated Files
+```
+generated_keys/
+├── jwt_keys_hmac_20231201_143022.json
+├── jwt_keys_rsa_private_20231201_143022.pem
+├── jwt_keys_rsa_public_20231201_143022.pem
+├── jwt_keys_ec_private_20231201_143022.pem
+├── jwt_keys_ec_public_20231201_143022.pem
+└── jwt_keys_example_20231201_143022.json
+```
 
-⚠️ Security Notice
-
-WARNING: This tool is for DEVELOPMENT and TESTING only. Never use generated keys in production environments.
+### ⚠️ Security Notice
+> **CRITICAL**: This tool is for **DEVELOPMENT & TESTING** only. 
+> - 🔒 Never use generated keys in production
+> - 🔑 Store secrets securely  
+> - 🚫 Never commit generated keys to version control
 
 ---
 
-🇷🇺 Русский
+## 🇷🇺 Русский
 
-🔐 Обзор
+### 🚀 Обзор
+**JWT Key Generator v2.0** - Продвинутый Python инструмент для безопасной генерации JWT ключей с интерактивной панелью управления и расширенными настройками. Идеален для разработки, тестирования и обучения.
 
-Безопасный Python инструмент для генерации JWT ключей для разработки и тестирования. Поддерживает HMAC секреты и RSA ключевые пары с примерами генерации и верификации токенов.
+### ✨ Возможности
+- 🎛️ **Интерактивная панель управления** - Удобный терминальный интерфейс
+- ⚙️ **Настраиваемые параметры** - Гибкая конфигурация генерации
+- 🔑 **Множество алгоритмов** - Поддержка HMAC, RSA и ECDSA
+- 📁 **Умное управление файлами** - Организованный вывод с временными метками
+- 🎫 **Тестирование токенов** - Генерация и верификация JWT токенов
+- 💾 **Профили конфигурации** - Сохранение и загрузка настроек
+- 🔒 **Безопасность** - Защищенная случайная генерация
 
-✨ Возможности
-
-· 🔑 Генерация HMAC секретов (HS256, HS384, HS512)
-· 🔐 Создание RSA ключевых пар (RS256, RS384, RS512)
-· 🎫 Генерация JWT токенов с кастомными payload
-· ✅ Верификация и валидация токенов
-· 💾 Сохранение ключей в файлы с временными метками
-· 🛡️ Безопасная случайная генерация
-
-🚀 Быстрый старт
+### 🚀 Быстрый старт
 
 ```bash
 # Установка зависимостей
 pip install -r requirements.txt
 
-# Генерация всех ключей
-python jwt_generator.py
+# Запуск панели управления (РЕКОМЕНДУЕТСЯ)
+python control_panel.py
 
-# Только HMAC ключи
+# Или использование генератора напрямую
+python jwt_generator.py --help
+
+# Генерация конкретных типов ключей
 python jwt_generator.py --hmac-only
-
-# Только RSA ключи
 python jwt_generator.py --rsa-only
-
-# Свой префикс для файлов
-python jwt_generator.py --output my_project_keys
+python jwt_generator.py --ec-only
 ```
 
-📁 Генерируемые файлы
+### 🎛️ Использование панели управления
+1. **Запуск**: `python control_panel.py`
+2. **Настройка**: Выбор алгоритмов, размеров ключей, папки сохранения
+3. **Генерация**: Запуск генерации ключей в один клик
+4. **Результаты**: Ключи сохраняются в организованную структуру папок
 
-· *_hmac_*.json - HMAC секретные ключи
-· *_rsa_private_*.pem - RSA приватные ключи
-· *_rsa_public_*.pem - RSA публичные ключи
-· *_example_*.json - Примеры JWT токенов
+### 📁 Генерируемые файлы
+```
+generated_keys/
+├── jwt_keys_hmac_20231201_143022.json
+├── jwt_keys_rsa_private_20231201_143022.pem
+├── jwt_keys_rsa_public_20231201_143022.pem
+├── jwt_keys_ec_private_20231201_143022.pem
+├── jwt_keys_ec_public_20231201_143022.pem
+└── jwt_keys_example_20231201_143022.json
+```
 
-⚠️ Важное предупреждение
+### ⚠️ Важное предупреждение
+> **ВАЖНО**: Этот инструмент только для **РАЗРАБОТКИ & ТЕСТИРОВАНИЯ**.
+> - 🔒 Никогда не используйте ключи в продакшене
+> - 🔑 Храните секреты в безопасном месте
+> - 🚫 Не коммитьте сгенерированные ключи в репозиторий
 
-ВНИМАНИЕ: Этот инструмент предназначен только для РАЗРАБОТКИ и ТЕСТИРОВАНИЯ. Никогда не используйте сгенерированные ключи в продакшене.
-
-📄 License / Лицензия
-
+## 📄 License / Лицензия
 MIT License - see LICENSE file for details / MIT Лицензия - подробности в файле LICENSE
 
-🔧 Requirements / Зависимости
+## 🔧 Requirements / Зависимости
 
 ```txt
 pyjwt>=2.0.0
 cryptography>=3.0
 ```
 
-🐛 Issue Reporting / Сообщение об ошибках
-
-If you find any issues, please create an issue in the GitHub repository.
+## 🐛 Issue Reporting / Сообщение об ошибках
+If you find any issues, please create an issue in the GitHub repository.  
 Если вы нашли ошибки, пожалуйста, создайте issue в репозитории GitHub.
 
----
+## 📁 Project Structure / Структура проекта
+```
+jwt-key-generator/
+├── control_panel.py     # 🎛️ Main control panel / Основная панель управления
+├── jwt_generator.py     # 🔧 Core generator / Ядро генерации
+├── example_usage.py     # 📚 Usage examples / Примеры использования
+├── config.json          # ⚙️ Auto-generated config / Авто-генерируемый конфиг
+├── panel_settings.json  # 💾 Panel settings / Настройки панели
+├── requirements.txt     # 📦 Dependencies / Зависимости
+└── README.md           # 📖 Documentation / Документация
+```
 
-⭐ If this project helped you, please give it a star! / Если проект помог вам, поставьте звезду! ⭐
+---
+**⭐ If this project helped you, please give it a star! / Если проект помог вам, поставьте звезду! ⭐**
