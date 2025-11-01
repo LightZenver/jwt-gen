@@ -26,19 +26,19 @@
 pip install -r requirements.txt
 
 # Launch Control Panel (RECOMMENDED)
-python control_panel.py
+python panel.py
 
 # Or use generator directly
-python jwt_generator.py --help
+python jwtgen.py --help
 
 # Generate specific key types
-python jwt_generator.py --hmac-only
-python jwt_generator.py --rsa-only
-python jwt_generator.py --ec-only
+python jwtgen.py --hmac-only
+python jwtgen.py --rsa-only
+python jwtgen.py --ec-only
 ```
 
 ### 🎛️ Control Panel Usage
-1. **Launch**: `python control_panel.py`
+1. **Launch**: `python panel.py`
 2. **Configure**: Set algorithms, key sizes, output directory
 3. **Generate**: Start key generation with one click
 4. **Results**: Keys saved in organized folder structure
@@ -83,19 +83,19 @@ generated_keys/
 pip install -r requirements.txt
 
 # Запуск панели управления (РЕКОМЕНДУЕТСЯ)
-python control_panel.py
+python panel.py
 
 # Или использование генератора напрямую
-python jwt_generator.py --help
+python jwtgen.py --help
 
 # Генерация конкретных типов ключей
-python jwt_generator.py --hmac-only
-python jwt_generator.py --rsa-only
-python jwt_generator.py --ec-only
+python jwtgen.py --hmac-only
+python jwtgen.py --rsa-only
+python jwtgen.py --ec-only
 ```
 
 ### 🎛️ Использование панели управления
-1. **Запуск**: `python control_panel.py`
+1. **Запуск**: `python panel.py`
 2. **Настройка**: Выбор алгоритмов, размеров ключей, папки сохранения
 3. **Генерация**: Запуск генерации ключей в один клик
 4. **Результаты**: Ключи сохраняются в организованную структуру папок
@@ -133,14 +133,13 @@ If you find any issues, please create an issue in the GitHub repository.
 
 ## 📁 Project Structure / Структура проекта
 ```
-jwt-key-generator/
-├── control_panel.py     # 🎛️ Main control panel / Основная панель управления
-├── jwt_generator.py     # 🔧 Core generator / Ядро генерации
-├── example_usage.py     # 📚 Usage examples / Примеры использования
+jwt-gen/
+├── panel.py             # 🎛️ Main control panel / Основная панель управления
+├── jwtgen.py            # 🔧 Core generator / Ядро генерации
 ├── config.json          # ⚙️ Auto-generated config / Авто-генерируемый конфиг
 ├── panel_settings.json  # 💾 Panel settings / Настройки панели
 ├── requirements.txt     # 📦 Dependencies / Зависимости
-└── README.md           # 📖 Documentation / Документация
+└── README.md            # 📖 Documentation / Документация
 ```
 
 ---
